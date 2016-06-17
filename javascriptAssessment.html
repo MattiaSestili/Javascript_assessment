@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+    <meta charset="utf-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+<style>
+    .container.myStyle{
+        background-color:grey;
+        font-style: normal;
+        color: white;
+    }
+    
+    #result {
+        color: white;
+    }
+    
+    .jumbotron {
+        background-color:#0080c0;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        color: white;
+    }
+    
+    #button1 {
+        color: white;
+    }
+    
+    .form-control{
+        color:black;
+        max-width: 200px;
+    }
+    
+    .col-sm-4{
+        color: white;
+        font-size: 18px;        
+    }
+    
+    
+    
+</style>
+</head>
+
+<body>
+    <div class="container myStyle">
+        <div class="jumbotron">
+            <h1>Salary Tax Calculator</h1>
+            <p>Table show how government tax the gross salary</p> 
+        </div>
+    
+    <!--Display on one line simbol of pound, box where insert the amount and a button for the calculation -->
+    <div class="form-group">
+        <label class="sr-only" for="exampleInputAmount">Amount (in pound)</label>
+        <div class="input-group">
+            <div class="input-group-addon">£</div>
+            <input type="number" class="form-control" id="input1" placeholder="Amount">
+            <button type="submit" id="button1" class="btn btn-primary">Calculate</button>
+        </div>
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox"> Do you have children?</label>
+    </div>
+        
+        
+    <div class="row">
+                <!--Display label of all details of the salary tax calculation 
+                and next each other the corresponding amount-->
+            <div class="col-sm-4">
+                    <div id="demo">Gross Salary: <span id="salaryGross"></span></div>    
+                    <div id="demo2">Allowance: <span id="allowance"></span></div>
+            </div> 
+            
+            <div class="col-sm-4">
+                    <div id="demo3">Tax at 20%: <span id="tax20Percent"></span></div>    
+                    <div id="demo4">Tax at 40%: <span id="tax40Percent"></span></div>
+            </div>
+            
+            <div class="col-sm-4">    
+                    <div id="demo5">Net Salary: 
+                    <div id="resultSalary"></div>
+            </div>    
+        </div>
+
+        <script src="javascriptAssessment.js"></script>
+
+        </div> 
+    </div> <!--Closing Container -->
+</body>
+</html>
